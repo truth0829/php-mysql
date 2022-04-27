@@ -1,0 +1,587 @@
+                                @font-face {
+                                    font-family: RobotoRegular;
+                                    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+                                }
+                                
+                                body {
+                                    background-color: #ccc;
+                                    font-family: "RobotoRegular";
+                                    font-size: 15px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    border: 2px;
+                                }
+                                
+                                header {
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                    padding: 10px 0px 0px 10px;
+                                }
+                                
+                                footer {
+                                    box-sizing: border-box;
+                                    position: fixed;
+                                    background-color: grey;
+                                    color: #fff;
+                                    margin: 0px;
+                                    padding: 10px;
+                                    bottom: 0;
+                                    width: 100%;
+                                    margin-top: 20px;
+                                    z-index: 1;
+                                    clear: both;
+                                }
+                                
+                                .clearfix {
+                                    clear: both;
+                                }
+                                
+                                .only-md {
+                                    display: none;
+                                }
+                                
+                                .only-lg {
+                                    display: none;
+                                }
+                                
+                                .only-sm {
+                                    display: block;
+                                }
+                                
+                                .content-width {
+                                    width: 100%;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    border: 0px;
+                                }
+                                
+                                .content-bg {
+                                    background-color: #fff;
+                                }
+                                
+                                #logo {
+                                    box-sizing: border-box;
+                                    position: fixed;
+                                    padding: 0px;
+                                    border: 0px;
+                                    width: 74px;
+                                    height: 75px;
+                                    background: transparent url("../graphics/logo.png") top left no-repeat;
+                                    background-size: cover;
+                                    text-indent: -9999px;
+                                    z-index: 3;
+                                }
+                                /*top menu */
+                                
+                                nav {
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                    padding-top: 40px;
+                                    top: 8px;
+                                    border: 0px;
+                                    position: fixed;
+                                    width: 98%;
+                                    z-index: 4;
+                                }
+                                
+                                nav ul li ul {
+                                    position: relative;
+                                    display: none;
+                                }
+                                
+                                nav ul li:hover ul,
+                                nav ul li:focus ul {
+                                    padding: 0px;
+                                    border: 0px;
+                                    margin: 0px;
+                                    display: block;
+                                }
+                                
+                                nav ul {
+                                    margin: 0px;
+                                    padding: 0px;
+                                    border: 0px;
+                                    width: 100%;
+                                }
+                                
+                                nav ul li {
+                                    list-style: none;
+                                    padding: 0px;
+                                    border: 0px;
+                                    width: 100%;
+                                }
+                                
+                                nav ul li a {
+                                    margin: 0px;
+                                    border: 0px;
+                                    width: 100%;
+                                    color: #999;
+                                    text-decoration: none;
+                                }
+                                
+                                nav ul li ul {
+                                    margin: 0px;
+                                    padding: 0px;
+                                    border: 0px;
+                                    background-color: #7c7c7c;
+                                    width: 100%;
+                                }
+                                
+                                nav ul li ul li {
+                                    box-sizing: border-box;
+                                    list-style: none;
+                                    margin: 0px;
+                                    padding: 5px;
+                                    border: 0px;
+                                    width: 100%;
+                                    border-bottom: #7c7c7e;
+                                }
+                                
+                                nav ul li ul li a {
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                    padding: 5px 10px;
+                                    border: 0px;
+                                    width: 100%;
+                                    color: #fff;
+                                    text-decoration: none;
+                                }
+                                
+                                nav ul li ul li a:hover {
+                                    background-color: #363b40;
+                                    width: 94%;
+                                }
+                                
+                                .submenu {
+                                    box-sizing: border-box;
+                                    background-color: #899;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    border: 0px;
+                                    width: 94%;
+                                }
+                                
+                                .submenu li {
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                    padding: 2px;
+                                    border: 0px;
+                                    width: 100%;
+                                }
+                                
+                                .submenu li a {
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                    border: 0px;
+                                    padding: 2px 2px;
+                                    width: 100%;
+                                    color: peachpuff;
+                                }
+                                /*for jhelum sub menus*/
+                                
+                                nav ul li ul .sub_menu_active ul {
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                    border: 0px;
+                                    padding: 2px;
+                                    display: none;
+                                }
+                                
+                                nav ul li ul .sub_menu_active:hover ul,
+                                nav ul li ul .sub_menu_active:focus ul {
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                    border: 0px;
+                                    padding: 2px;
+                                    display: block;
+                                }
+                                
+                                #menu {
+                                    box-sizing: border-box;
+                                    position: absolute;
+                                    width: 50px;
+                                    height: 50px;
+                                    top: 50px;
+                                    right: 10px;
+                                }
+                                
+                                #cover {
+                                    position: fixed;
+                                    box-sizing: border-box;
+                                    border: 0px;
+                                    top: 0px;
+                                    border: 0px;
+                                    height: 269px;
+                                    width: 100%;
+                                    background: url("../graphics/cover-sm2.jpg")no-repeat center center;
+                                    background-size: cover;
+                                    z-index: 2;
+                                    padding: 1px 0px 0px 1px;
+                                }
+                                
+                                .one-cols {
+                                    display: block;
+                                    position: relative;
+                                    float: left;
+                                    box-sizing: border-box;
+                                    padding: 10px;
+                                    border: 0px;
+                                    width: 100%;
+                                    top: 290px;
+                                    z-index: 1;
+                                }
+                                
+                                .cols {
+                                    display: block;
+                                    position: relative;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    padding: 15px;
+                                    border: 0px;
+                                    width: 100%;
+                                    top: 290px;
+                                    z-index: 1;
+                                }
+                                
+                                .cols figure {
+                                    float: left;
+                                }
+                                
+                                .cols h2 {
+                                    color: blue;
+                                    font-weight: bold;
+                                }
+                                
+                                .cols a {
+                                    text-decoration: none;
+                                }
+                                
+                                .two {
+                                    box-sizing: border-box;
+                                    float: left;
+                                    padding: 5px;
+                                    border: 0px;
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                                
+                                footer ul {
+                                    margin: 0px;
+                                    border: 0px;
+                                    padding: 3px 5px;
+                                }
+                                
+                                footer ul li {
+                                    display: inline;
+                                    margin: 0px;
+                                    border: 0px;
+                                    padding: 0px;
+                                    padding: 5px;
+                                    list-style-type: none;
+                                }
+                                
+                                footer ul li a {
+                                    text-decoration: none;
+                                    padding: 1px;
+                                    color: #fff;
+                                }
+                                
+                                footer ul li a:hover {
+                                    color: #ccc;
+                                }
+                                
+                                aside {
+                                    position: relative;
+                                    box-sizing: border-box;
+                                    float: right;
+                                    border: solid;
+                                    width: 25%;
+                                    top: 50px;
+                                    padding: 40px;
+                                    margin: 0px;
+                                    border: 0px;
+                                    background-color: darkseagreen;
+                                    text-align: center;
+                                }
+                                
+                                aside ul {
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                    border: 0px;
+                                    padding: 10px;
+                                }
+                                
+                                aside ul li {
+                                    list-style-type: none;
+                                    margin: 0px;
+                                    border: 0px;
+                                    padding: 1px;
+                                }
+                                
+                                aside ul li a {
+                                    padding: 1px;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    color: #fff;
+                                }
+                                
+                                aside ul li a:hover {
+                                    background-color: burlywood;
+                                }
+                                
+                                #gallery {
+                                    position: relative;
+                                    display: block;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    width: 100%;
+                                    margin: 0px;
+                                    border: 0px;
+                                    padding: 0px;
+                                    top: 290px;
+                                    z-index: 1;
+                                }
+                                
+                                #gallery .img {
+                                    float: left;
+                                }
+                                
+                                section {
+                                    margin-bottom: 20px;
+                                }
+                                
+                                @media (min-width: 568px) and (orientation: landscape) {
+                                    .cols {
+                                        position: static;
+                                    }
+                                    .one-cols {
+                                        position: static;
+                                    }
+                                    .two {
+                                        position: static;
+                                    }
+                                    #gallery {
+                                        position: static;
+                                    }
+                                    #cover {
+                                        position: static;
+                                        padding-top: 0px;
+                                        top: 0px;
+                                        z-index: 0;
+                                        height: 300px;
+                                        background: url("../graphics/cover-sm2.jpg")no-repeat center center;
+                                        background-size: cover;
+                                    }
+                                    #logo {
+                                        position: static;
+                                    }
+                                }
+                                
+                                @media(min-width:768px) {
+                                    .cols {
+                                        position: static;
+                                        width: 25%;
+                                        top: 0px;
+                                    }
+                                    #gallery {
+                                        position: static;
+                                        width: 25%;
+                                        top: 0px;
+                                    }
+                                    .one-cols {
+                                        position: static;
+                                        width: 75%;
+                                        z-index: 0;
+                                    }
+                                    .two {
+                                        position: static;
+                                        padding: 5px;
+                                        background-color: grey;
+                                        color: #fff;
+                                        font-weight: bold;
+                                        width: 50%;
+                                    }
+                                    aside {
+                                        position: relative;
+                                        box-sizing: border-box;
+                                        float: right;
+                                        border: solid;
+                                        width: 25%;
+                                        top: 50px;
+                                        padding: 40px;
+                                        margin: 0px;
+                                        border: 0px;
+                                        background-color: darkseagreen;
+                                        text-align: center;
+                                    }
+                                    aside ul {
+                                        box-sizing: border-box;
+                                        margin: 0px;
+                                        border: 0px;
+                                        padding: 10px;
+                                    }
+                                    aside ul li {
+                                        list-style-type: none;
+                                        margin: 0px;
+                                        border: 0px;
+                                        padding: 1px;
+                                    }
+                                    aside ul li a {
+                                        padding: 1px;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                        text-align: center;
+                                        color: #fff;
+                                    }
+                                    aside ul li a:hover {
+                                        background-color: burlywood;
+                                    }
+                                    .only-md {
+                                        display: block;
+                                    }
+                                    .only-lg {
+                                        display: block;
+                                    }
+                                    .only-sm {
+                                        display: none;
+                                    }
+                                    #logo {
+                                        position: static;
+                                        box-sizing: border-box;
+                                        padding: 10px;
+                                        z-index: 0;
+                                        left: 10px;
+                                        width: 74px;
+                                        height: 75px;
+                                        background: transparent url("../graphics/logo.png") top left no-repeat;
+                                        background-size: cover;
+                                        text-indent: -9999px;
+                                    }
+                                    nav {
+                                        position: static;
+                                        display: inline-block;
+                                        box-sizing: border-box;
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        width: 100%;
+                                        margin: 0px;
+                                        border: 0px;
+                                        padding: 0px;
+                                        background-color: #7c7c7c;
+                                    }
+                                    nav ul li ul {
+                                        display: inline;
+                                    }
+                                    nav ul li:hover ul,
+                                    nav ul li:focus ul {
+                                        padding: 0px;
+                                        border: 0px;
+                                        margin: 0px;
+                                        display: inline;
+                                    }
+                                    nav ul {
+                                        margin: 0px;
+                                        padding: 1px 10px;
+                                        border: 0px;
+                                    }
+                                    nav ul li {
+                                        display: inline;
+                                        list-style: none;
+                                        padding: 0px;
+                                        border: 0px;
+                                    }
+                                    nav ul li a {
+                                        margin: 0px;
+                                        padding: 0px;
+                                        border: 0px;
+                                        padding: 0px;
+                                        width: 100%;
+                                        color: #999;
+                                        text-decoration: none;
+                                    }
+                                    nav ul li ul {
+                                        padding: 0px;
+                                        width: 100%;
+                                    }
+                                    nav ul li ul li {
+                                        box-sizing: border-box;
+                                        list-style: none;
+                                        padding: 0px;
+                                        border-bottom: transparent;
+                                    }
+                                    nav ul li ul li a {
+                                        box-sizing: border-box;
+                                        padding: 0px 10px;
+                                        width: 100%;
+                                        color: #fff;
+                                    }
+                                    nav ul li ul li a:hover {
+                                        display: inline;
+                                        background-color: transparent;
+                                    }
+                                    .submenu {
+                                        background-color: transparent;
+                                        padding: 0px;
+                                        display: none;
+                                        width: 0px;
+                                    }
+                                    .submenu li {
+                                        display: none;
+                                        padding: 0px;
+                                        width: 0px;
+                                    }
+                                    .submenu li a {
+                                        width: 0px;
+                                        color: transparent;
+                                    }
+                                    /*for jhelum sub menus*/
+                                    nav ul li ul .sub_menu_active ul {
+                                        display: none;
+                                    }
+                                    nav ul li ul .sub_menu_active:hover ul,
+                                    nav ul li ul .sub_menu_active:focus ul {
+                                        display: none;
+                                    }
+                                    #menu {
+                                        display: none;
+                                    }
+                                }
+                                
+                                @media(min-width:1024px) {
+                                    .cols {
+                                        width: 25%;
+                                        top: 640px;
+                                    }
+                                    .one-cols {
+                                        position: static;
+                                        width: 75%;
+                                        top: 0px;
+                                        z-index: 0;
+                                    }
+                                    .two {
+                                        width: 50%;
+                                    }
+                                    #cover {
+                                        width: 100%;
+                                        height: 607px;
+                                        background: url("../graphics/cover_1.jpg")no-repeat center center;
+                                        background-size: cover;
+                                    }
+                                    .only-md {
+                                        display: block;
+                                    }
+                                    .only-lg {
+                                        display: block;
+                                    }
+                                    .only-sm {
+                                        display: none;
+                                    }
+                                    .content-width {
+                                        width: 980px;
+                                        margin: 0px auto;
+                                    }
+                                    aside {
+                                        width: 25%;
+                                    }
+                                }
